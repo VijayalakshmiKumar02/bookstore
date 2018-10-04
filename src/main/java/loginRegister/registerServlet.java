@@ -133,7 +133,7 @@ public class registerServlet extends HttpServlet {
                                 user User = new user();
                                 User.setUserEmail(email);
                                 userSession.setAttribute("src/main/java/user", User);
-                                response.sendRedirect(request.getContextPath());
+                                response.sendRedirect(request.getContextPath() + "/index.jsp");
                             } else {
                                 isRegistered = false;
                                 out.println("You are not registered");
