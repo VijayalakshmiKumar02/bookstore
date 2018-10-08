@@ -115,7 +115,7 @@ public class registerServlet extends HttpServlet {
                         if (pass.equals(passAgain)) {
                             // then the user is registered and a session is 
 
-                            String sql = "INSERT INTO  `saikiran enterprises`.`user` "
+                            String sql = "INSERT INTO  `saikiranenterprises`.`user` "
                                     + "(`user_id` ,`email` ,`pass` ,`registeredOn`) "
                                     + "VALUES (NULL ,  ?, SHA1(  ? ) , NOW( )); ";
 
