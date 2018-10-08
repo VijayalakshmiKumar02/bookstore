@@ -190,7 +190,7 @@ public class registerServlet extends HttpServlet {
             request.setAttribute("message", message);
             request.setAttribute("messageDetail", messageDetail);
             dispatchMessage.forward(request, response);
-            response.sendError(404);
+            //response.sendError(404);
         }
     }
 
